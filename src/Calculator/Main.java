@@ -2,7 +2,7 @@ package Calculator;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main extends Operators{
 	
 	public static void main(String[] args) {
 		// Creates two integers to be used as the main numbers
@@ -31,17 +31,17 @@ public class Main {
 		num2 = input.nextInt();
 		
 		if (operator.equals("+")) {
-			// Adds the two integers and prints the result
-			System.out.println("Your answer is: " + num1 + " + " + num2 + " = " + (num1 + num2));
+			// Prints the result
+			System.out.println("Your answer is: " + num1 + " + " + num2 + " = " + Addition(num1, num2));
 		} else if (operator.equals("-")) {
-			// Subtracts the two integers and prints the result
-			System.out.println("Your answer is: " + num1 + " - " + num2 + " = " + (num1 - num2));
+			// Prints the result
+			System.out.println("Your answer is: " + num1 + " - " + num2 + " = " + Subtraction(num1, num2));
 		} else if (operator.equals("*")) {
-			// Multiplies the two integers and prints the result
-			System.out.println("Your answer is: " + num1 + " x " + num2 + " = " + (num1 * num2));
+			// Prints the result
+			System.out.println("Your answer is: " + num1 + " x " + num2 + " = " + Multiplication(num1, num2));
 		} else if (operator.equals("/")) {
-			// Divides the two integers and prints the result
-			System.out.println("Your answer is: " + num1 + " / " + num2 + " = " + (num1 / num2));
+			// Prints the result
+			System.out.println("Your answer is: " + num1 + " / " + num2 + " = " + Division(num1, num2));
 		} else {
 			// Catches the wrong operator
 			System.out.println("Please enter a correct operator");
