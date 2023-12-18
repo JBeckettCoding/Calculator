@@ -16,17 +16,20 @@ public class Addition {
 		Scanner input = new Scanner(System.in);
 		
 		// Asks for input and then assigns the input to an integer variable
-		System.out.println("Please enter the first integer: ");
+		System.out.print("Please enter the first integer: "); 
 		num1 = input.nextInt();
-		
+				
 		// Asks for input and then assigns the input to an integer variable
-		System.out.println("Please enter the Second integer: ");
+		System.out.print("Please enter the second integer: ");
 		num2 = input.nextInt();
 		
 		// Adds the two integers and prints the result
-		System.out.println("Your answer is " + (num1 + num2));
+		System.out.println("Your answer is: " + num1 + " + " + num2 + " = " + (num1 + num2));
 		
+		// Closes the input
+		input.close();
 		
 	}
+	
 
 }
